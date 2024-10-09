@@ -19,6 +19,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
         </ul>
         <div class="nav-right">
             <div class="social-icons">
@@ -40,7 +41,100 @@
             <img src="./assets/iot-stock.png" class="iot-image" alt="Internet of Things">
         </div>
     </section>
-      <!-- Footer -->
+
+    <!-- About Us -->
+    <section id="about-us" class="about-section">
+        <h2>About Us</h2>
+        <p>We provide the best IT products to fulfill your needs with quality and authenticity.</p>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog-section">
+        <h2>Our Products</h2>
+        <div class="filters">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="all">All</option>
+                <!-- Categories will be populated dynamically -->
+            </select>
+
+            <label for="items-per-page">Items per page:</label>
+            <select id="items-per-page">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+            </select>
+        </div>
+        <div id="products-container" class="products-container">
+            <!-- Products will be populated dynamically -->
+        </div>
+        <div class="pagination">
+            <button id="prev-page">Previous</button>
+            <span id="current-page">1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-container" class="cart-container">
+            <!-- Cart items will be populated dynamically -->
+        </div>
+        <div class="cart-summary">
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Checkout</h2>
+            <p>Thank you for your purchase!</p>
+            <button id="close-modal" class="close-modal-button">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 I-T Store. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- Catalog Section -->
+<section id="catalog" class="catalog-section">
+    <h2>Our Products</h2>
+    <div class="filters">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="all">All</option>
+            <!-- Categories will be populated dynamically -->
+        </select>
+
+        <label for="items-per-page">Items per page:</label>
+        <select id="items-per-page">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+        </select>
+
+        <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+    <div id="products-container" class="products-container">
+        <!-- Products will be populated dynamically -->
+    </div>
+    <div class="pagination">
+        <button id="prev-page">Previous</button>
+        <span id="current-page">1</span>
+        <button id="next-page">Next</button>
+    </div>
+</section>
+
+
+         <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Contact Info -->
@@ -76,5 +170,9 @@
             <p>&copy; 2024 ITstore. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
