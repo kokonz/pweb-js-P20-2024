@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #e1f3d4;
+    background-color: #e1e1e1;
     color: #333;
     line-height: 1.6;
 }
@@ -44,6 +44,8 @@ body {
 }
 
 .nav-links {
+    position: relative;
+    right: 350px;
     display: flex;
     list-style: none;
     align-items: center;
@@ -82,6 +84,7 @@ body {
     color: #909090;
 }
 
+/*
 .cta-button {
     padding: 10px 20px;
     background-color: #808080;
@@ -91,7 +94,7 @@ body {
     margin-left: 20px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
-}
+}*/
 
 .cta-button:hover {
     background-color: #707070;
@@ -133,9 +136,10 @@ section {
 
 .landing-text p {
     margin: 20px 0;
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    font-weight: bold;
     color: #e0e0e0;
 }
 
@@ -155,4 +159,118 @@ section {
 
 .iot-image {
     height: 400px;
+}
+
+/* Catalog */
+/* Catalog Section Styles */
+.catalog-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.catalog-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filters select {
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 40px); /* Adjust width as needed */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #777;
+}
+
+.add-to-cart-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination span {
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
 }

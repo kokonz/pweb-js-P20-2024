@@ -23,13 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalPages = 1;
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Initialize
     fetchProducts();
     populateCategories();
     renderCart();
     updateCartCount();
 
-    // Event Listeners
     categorySelect.addEventListener('change', () => {
         currentCategory = categorySelect.value;
         currentPage = 1;
@@ -79,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Functions
     function fetchProducts() {
         fetch(API_URL)
             .then(response => {
@@ -100,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateCategories() {
-        // Clear existing categories except 'all'
         categorySelect.innerHTML = '<option value="all">All</option>';
         categories.forEach(category => {
             const option = document.createElement('option');
@@ -140,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
             productsContainer.appendChild(productCard);
         });
 
-        // Add event listeners to Add to Cart buttons
         const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
         addToCartButtons.forEach(button => {
             button.addEventListener('click', addToCart);
@@ -202,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cartContainer.appendChild(cartItemDiv);
         });
 
-        // Add event listeners for quantity controls and remove buttons
         const decreaseButtons = document.querySelectorAll('.decrease-qty');
         const increaseButtons = document.querySelectorAll('.increase-qty');
         const removeButtons = document.querySelectorAll('.remove-item-button');
@@ -219,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
             button.addEventListener('click', removeItem);
         });
 
-        // Update totals
         const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
         const totalPrice = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 

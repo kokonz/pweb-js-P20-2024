@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SushIT - Fresh & Authentic Taste</title>
+    <title>ITStore, your IT needs here!</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,7 +13,7 @@
     <!-- Nav Bar -->
     <nav class="navbar">
         <div class="logo">
-            <span class="i">I</span><span class="t">T</span><span class="store">Store</span>
+            <span class="i">I</span><span class="t">T</span><span class="store">Market</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -27,25 +27,18 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
-            <a href="#order" class="cta-button">Make An Order</a>
         </div>
     </nav>
 
     <!-- Landing Page -->
     <section id="landing" class="landing-section">
         <div class="landing-text">
-            <h1>Your <span class="i">I</span><span class="t">T</span> <br>Needs Here</h1>
-            <p>Take a look at our high quality IT-related needs here</p>
+            <h1>Your Everyday <br>Needs Here</h1>
+            <p>From <span class="i">I</span><span class="t">T</span>, to <span class="i">I</span><span class="t">T</span></p>
         </div>
         <div>
             <img src="./assets/iot-stock.png" class="iot-image" alt="Internet of Things">
         </div>
-    </section>
-
-    <!-- About Us -->
-    <section id="about-us" class="about-section">
-        <h2>About Us</h2>
-        <p>We provide the best IT products to fulfill your needs with quality and authenticity.</p>
     </section>
 
     <!-- Catalog Section -->
@@ -55,9 +48,7 @@
             <label for="category-select">Category:</label>
             <select id="category-select">
                 <option value="all">All</option>
-                <!-- Categories will be populated dynamically -->
             </select>
-
             <label for="items-per-page">Items per page:</label>
             <select id="items-per-page">
                 <option value="5">5</option>
@@ -65,9 +56,7 @@
                 <option value="20">20</option>
             </select>
         </div>
-        <div id="products-container" class="products-container">
-            <!-- Products will be populated dynamically -->
-        </div>
+        <div id="products-container" class="products-container"></div>
         <div class="pagination">
             <button id="prev-page">Previous</button>
             <span id="current-page">1</span>
@@ -98,43 +87,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 I-T Store. All rights reserved.</p>
-    </footer>
-
-    
-    <!-- Catalog Section -->
-<section id="catalog" class="catalog-section">
-    <h2>Our Products</h2>
-    <div class="filters">
-        <label for="category-select">Category:</label>
-        <select id="category-select">
-            <option value="all">All</option>
-            <!-- Categories will be populated dynamically -->
-        </select>
-
-        <label for="items-per-page">Items per page:</label>
-        <select id="items-per-page">
-            <option value="5">5</option>
-            <option value="10" selected>10</option>
-            <option value="20">20</option>
-        </select>
-
-        <input type="text" id="search-input" placeholder="Search products...">
-    </div>
-    <div id="products-container" class="products-container">
-        <!-- Products will be populated dynamically -->
-    </div>
-    <div class="pagination">
-        <button id="prev-page">Previous</button>
-        <span id="current-page">1</span>
-        <button id="next-page">Next</button>
-    </div>
-</section>
-
-
-         <!-- Footer -->
+     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
             <!-- Contact Info -->
