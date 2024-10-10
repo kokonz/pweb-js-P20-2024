@@ -84,31 +84,6 @@ body {
     color: #909090;
 }
 
-/*
-.cta-button {
-    padding: 10px 20px;
-    background-color: #808080;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}*/
-
-.cta-button:hover {
-    background-color: #707070;
-}
-
-section {
-    min-height: 100vh;
-}
-
-.small-section {
-    padding: 50px;
-    min-height: auto;
-}
-
 /* Landing Page */
 .landing-section {
     display: flex;
@@ -130,10 +105,6 @@ section {
     line-height: 1.2;
 }
 
-.landing-text .with {
-    color: #ff6f61;
-}
-
 .landing-text p {
     margin: 20px 0;
     font-size: 1.8em;
@@ -143,26 +114,56 @@ section {
     color: #e0e0e0;
 }
 
-.landing-text button {
-    padding: 15px 30px;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.landing-text button:hover {
-    background-color: #ff4e42;
-}
-
 .iot-image {
     height: 400px;
 }
 
-/* Catalog */
-/* Catalog Section Styles */
+/* About Us Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    padding: 10px 20px;
+    background-color: #0588d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #046bb3;
+}
+
+/* Catalog Section */
 .catalog-section {
     padding: 20px;
     background-color: #f9f9f9;
@@ -193,21 +194,22 @@ section {
     border: 1px solid #ccc;
 }
 
+/* Product Grid */
 .products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
+/* Product Card */
 .product-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
     padding: 15px;
-    width: calc(25% - 40px); /* Adjust width as needed */
-    box-sizing: border-box;
+    width: 220px;
     text-align: center;
     transition: transform 0.2s;
 }
@@ -247,6 +249,7 @@ section {
     background-color: #218838;
 }
 
+/* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
@@ -273,4 +276,51 @@ section {
     padding: 10px;
     font-weight: bold;
     color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ff6f61;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section .social-icons a {
+    color: #ccc;
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #ccc;
 }

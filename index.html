@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <!-- Nav Bar -->
@@ -41,6 +41,18 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about-us" class="about-section">
+        <div class="about-content">
+            <img src="path_to_your_about_us_image.png" alt="About Us Image" class="about-image">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>ITMarket is committed to delivering top-quality IT products and solutions to meet the diverse needs of our customers.</p>
+                <button class="learn-more-button">More</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Catalog Section -->
     <section id="catalog" class="catalog-section">
         <h2>Our Products</h2>
@@ -56,7 +68,9 @@
                 <option value="20">20</option>
             </select>
         </div>
-        <div id="products-container" class="products-container"></div>
+        <div id="products-container" class="products-container">
+            <!-- Product cards go here -->
+        </div>
         <div class="pagination">
             <button id="prev-page">Previous</button>
             <span id="current-page">1</span>
@@ -87,45 +101,41 @@
         </div>
     </div>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <!-- Contact Info -->
-            <div class="footer-section contact-info">
-                <h4>Contact Us</h4>
-                <p><i class="fas fa-phone-alt"></i> +1-800-123-4567</p>
-                <p><i class="fas fa-envelope"></i> support@itstore.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Silicon City</p>
+            <div class="footer-section company-info">
+                <h4>ITMarket</h4>
+                <p>No matter how your customers want to pay, we can help you find the right solution.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
 
-            <!-- Quick Links -->
-            <div class="footer-section quick-links">
-                <h4>Quick Links</h4>
+            <div class="footer-section quick-menu">
+                <h4>Quick Menu</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#services">Our Services</a></li>
                 </ul>
             </div>
 
-            <!-- Social Media Links -->
-            <div class="footer-section social-icons">
-                <h4>Follow Us</h4>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="footer-section contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Avenue, Silicon City</p>
+                <p><i class="fas fa-envelope"></i> support@itmarket.com</p>
             </div>
         </div>
-
-        <!-- Copyright Info -->
         <div class="footer-bottom">
-            <p>&copy; 2024 ITstore. All Rights Reserved.</p>
+            <p>&copy; 2024 ITMarket. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- External JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
