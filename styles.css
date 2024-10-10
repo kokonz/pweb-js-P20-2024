@@ -132,44 +132,43 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    background-color: #f0f0f0;
+    padding: 60px; 
+    background-color: #f5f5f5; 
 }
 
 .about-content {
     display: flex;
+    flex-direction: row-reverse; 
     align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 .about-image {
-    width: 300px;
-    border-radius: 10px;
-    margin-right: 20px;
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 40px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    color: #333;
 }
 
 .about-text h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .about-text p {
     font-size: 1.2em;
+    line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
-}
-
-.learn-more-button {
-    padding: 10px 20px;
-    background-color: #0588d9;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.learn-more-button:hover {
-    background-color: #046bb3;
 }
 
 /* Catalog Section */
@@ -216,7 +215,7 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 15px;
-    width: calc(25% - 40px); /* Adjust width as needed */
+    width: calc(25% - 40px);
     box-sizing: border-box;
     text-align: center;
     transition: transform 0.2s;
@@ -244,7 +243,7 @@ section {
 }
 
 .add-to-cart-button {
-    background-color: #28a745;
+    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -254,7 +253,7 @@ section {
 }
 
 .add-to-cart-button:hover {
-    background-color: #218838;
+    background-color: #0056b3; 
 }
 
 .pagination {
@@ -264,25 +263,30 @@ section {
 }
 
 .pagination button {
-    background-color: #007bff;
+    background-color: #6c757d; 
     color: #fff;
     border: none;
-    padding: 10px 15px;
-    margin: 0 5px;
+    padding: 10px 20px; 
+    width: 80px; 
+    height: 40px; 
     border-radius: 5px;
     cursor: pointer;
+    text-align: center; 
+    line-height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.2s;
 }
 
 .pagination button:hover {
-    background-color: #0056b3;
+    background-color: #5a6268; 
 }
 
 .pagination span {
-    display: inline-block;
-    padding: 10px;
+    color: #007bff;
     font-weight: bold;
-    color: #333;
+    padding: 10px;
 }
 
 /* Cart Section */
@@ -324,7 +328,7 @@ section {
 }
 
 .cart-item:last-child {
-    border-bottom: none; /* Remove bottom border from the last item */
+    border-bottom: none; 
 }
 
 .cart-item img {
@@ -430,6 +434,80 @@ section {
     background-color: #218838;
 }
 
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #555;
+}
+
+.modal-content h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.close-modal-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.close-modal-button:hover {
+    background-color: #45a049;
+}
+
 /* Footer */
 .footer {
     background-color: #333333;
@@ -442,24 +520,24 @@ section {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Align sections to spread across */
+    justify-content: space-between; 
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 60px; /* Add left and right padding for wider spacing */
-    gap: 80px; /* Space between sections */
-    margin-bottom: 20px; /* Adds space between the main footer content and bottom line */
+    padding: 0 60px;
+    gap: 80px; 
+    margin-bottom: 20px; 
 }
 
 .footer-section {
     flex: 1;
-    margin: 0 30px; /* Add margin to create space between sections */
+    margin: 0 30px; 
 }
 
 .footer-left,
 .footer-middle,
 .footer-right {
-    flex-basis: 30%; /* Memberikan ruang yang lebih besar di antara section */
+    flex-basis: 30%; 
 }
 
 .footer-section h4 {
@@ -530,8 +608,8 @@ section {
 .footer-bottom::before {
     content: "";
     display: block;
-    width: 100vw; /* Membuat garis horizontal sepanjang elemen footer */
-    max-width: 1200px; /* Sesuaikan max-width sesuai lebar konten utama */
-    margin: 0 auto 15px auto; /* Mengatur margin otomatis untuk allign center */
+    width: 100vw;
+    max-width: 1200px; 
+    margin: 0 auto 15px auto; 
     border-top: 1px solid #aaaaaa;
 }
