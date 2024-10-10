@@ -432,47 +432,106 @@ section {
 
 /* Footer */
 .footer {
-    background-color: #2e2e2e;
-    color: #fff;
-    padding: 40px 20px;
+    background-color: #333333;
+    color: #cccccc;
+    padding: 50px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Align sections to spread across */
+    max-width: 1400px;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 60px; /* Add left and right padding for wider spacing */
+    gap: 80px; /* Space between sections */
+    margin-bottom: 20px; /* Adds space between the main footer content and bottom line */
 }
 
 .footer-section {
     flex: 1;
-    margin: 10px;
+    margin: 0 30px; /* Add margin to create space between sections */
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex-basis: 30%; /* Memberikan ruang yang lebih besar di antara section */
 }
 
 .footer-section h4 {
     font-size: 1.5em;
-    margin-bottom: 15px;
-    color: #ff6f61;
+    margin-bottom: 20px;
+    color: #66b2ff;
+}
+
+/* ITMarket Title Styling */
+.footer-section.company-info h4 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.footer-section.company-info h4 .i {
+    color: #0588d9;
+}
+
+.footer-section.company-info h4 .t {
+    color: #000000;
+}
+
+.footer-section.company-info h4 .market {
+    color: #ffffff;
+}
+
+.footer-section p,
+.footer-section ul li {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li a {
-    color: #ccc;
+    color: #cccccc;
     text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
 }
 
 .footer-section .social-icons a {
-    color: #ccc;
+    color: #cccccc;
     margin-right: 15px;
     font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
+.footer-section .social-icons a:hover {
+    color: #ffffff;
+}
+
+/* Footer Bottom */
 .footer-bottom {
     text-align: center;
-    padding: 10px;
-    background-color: #222;
-    color: #ccc;
+    padding: 20px 0;
+    background-color: transparent;
+    color: #aaaaaa;
+    font-size: 0.9em;
+}
+
+.footer-bottom::before {
+    content: "";
+    display: block;
+    width: 100vw; /* Membuat garis horizontal sepanjang elemen footer */
+    max-width: 1200px; /* Sesuaikan max-width sesuai lebar konten utama */
+    margin: 0 auto 15px auto; /* Mengatur margin otomatis untuk allign center */
+    border-top: 1px solid #aaaaaa;
 }
