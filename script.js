@@ -59,22 +59,22 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Your cart is empty!');
             return;
         }
-        checkoutModal.classList.add('show'); // Tampilkan modal dengan kelas show
+        checkoutModal.classList.add('show');
         clearCart();
-        autoCloseModal(); // Auto-close modal setelah 3 detik
+        autoCloseModal();
     });
 
     closeModalButton.addEventListener('click', () => {
-        checkoutModal.classList.remove('show'); // Sembunyikan modal dengan menghapus kelas show
+        checkoutModal.classList.remove('show');
     });
 
     closeButton.addEventListener('click', () => {
-        checkoutModal.classList.remove('show'); // Sembunyikan modal dengan menghapus kelas show
+        checkoutModal.classList.remove('show');
     });
 
     window.addEventListener('click', (event) => {
         if (event.target === checkoutModal) {
-            checkoutModal.classList.remove('show'); // Tutup modal saat mengklik di luar area modal
+            checkoutModal.classList.remove('show');
         }
     });
 

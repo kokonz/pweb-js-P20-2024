@@ -123,11 +123,11 @@ section {
     color: #e0e0e0;
 }
 
-.iot-image {
+.it-image {
     height: 400px;
 }
 
-/* About Us Section */
+/* About Us */
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -171,7 +171,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Catalog Section */
+/* Catalog */
 .catalog-section {
     padding: 20px;
     background-color: #f9f9f9;
@@ -289,7 +289,7 @@ section {
     padding: 10px;
 }
 
-/* Cart Section */
+/* Cart */
 .cart-section {
     display: flex;
     flex-direction: column;
@@ -318,7 +318,6 @@ section {
     margin-bottom: 20px;
 }
 
-/* Individual Cart Item Styling */
 .cart-item {
     display: flex;
     align-items: center;
@@ -355,7 +354,6 @@ section {
     margin: 5px 0;
 }
 
-/* Quantity Control Styling */
 .quantity-control {
     display: flex;
     align-items: center;
@@ -387,7 +385,6 @@ section {
     margin: 0 5px;
 }
 
-/* Remove Button Styling */
 .remove-button {
     background-color: #ff4e42;
     color: #fff;
@@ -404,7 +401,6 @@ section {
     background-color: #e2443b;
 }
 
-/* Cart Summary Styling */
 .cart-summary {
     display: flex;
     flex-direction: column;
@@ -434,7 +430,6 @@ section {
     background-color: #218838;
 }
 
-/* Modal Styling */
 .modal {
     position: fixed;
     top: 0;
@@ -546,7 +541,6 @@ section {
     color: #66b2ff;
 }
 
-/* ITMarket Title Styling */
 .footer-section.company-info h4 {
     font-size: 2em;
     font-weight: bold;
@@ -596,7 +590,6 @@ section {
     color: #ffffff;
 }
 
-/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
